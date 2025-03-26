@@ -1,23 +1,54 @@
-# Data Structures Assignment #1  
+Data Structures Assignment #2
+Overview
+This project consists of two parts:
 
-## **Overview**  
-This project implements an array-based system with the following functions:  
-1. **Search for an integer** – Returns the index if found.  
-2. **Modify a value** – Replaces an integer at a given index and returns the old and new values.  
-3. **Add a new integer** – Appends a new integer to the array.  
-4. **Remove an integer** – Deletes an element at a given index.  
+Part 1: Singly Linked List Implementation
+A custom singly linked list (Single_Linked_List) was created with the following capabilities:
 
-Exception handling is included for modification and addition functions.
+push_front – Adds a new element to the beginning of the list.
 
----
+push_back – Adds a new element to the end of the list.
 
-## **How to Run the Code**  
+pop_front – Removes the first element from the list.
 
-### **Steps in Visual Studio**  
-1. Open **Visual Studio** and create a new C++ project.  
-2. Add `main.cpp` and `main.h` to the project.  
-3. **Build the solution** (`Ctrl + Shift + B`).  
-4. **Run the program** (`Ctrl + F5`).  
+pop_back – Removes the last element from the list.
+
+front / back – Retrieves the value at the front or back of the list.
+
+empty – Checks whether the list is empty.
+
+insert(index, item) – Inserts an element at the given index. If the index is beyond the current size, the item is added to the end.
+
+remove(index) – Removes an element at the specified index. Returns a boolean for success/failure.
+
+find(item) – Returns the index of the first occurrence of the item or the size of the list if not found.
+
+This implementation maintains internal pointers to both the head and tail nodes, as well as a counter for num_items.
+
+Part 2: Stack Using a Vector
+A stack of integers was implemented using a C++ vector with full functionality:
+
+Check if the stack is empty
+
+Push – Add integers to the stack
+
+Pop – Remove the top element
+
+Top – Display the current top element
+
+Average – Calculate the average of all elements in the stack
+
+All operations mimic standard stack behavior, leveraging the dynamic capabilities of the STL vector.
+
+How to Run the Code
+Steps in Visual Studio
+Open Visual Studio and create a new C++ project.
+
+Add main.cpp and any relevant header files to the project.
+
+Build the solution (Ctrl + Shift + B).
+
+Run the program (Ctrl + F5).
 
 ---
 
